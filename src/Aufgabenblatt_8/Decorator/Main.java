@@ -7,19 +7,19 @@ public class Main {
         System.out.println("Schmiede Schwerter");
 
         Schwert eisenschwert = new Eisenschwert();
-        Schwert meteoritenschwert = new Meteoritenschwert();
+        Schwert goldschwert = new Goldschwert();
 
         eisenschwert.zeichne();
         eisenschwert.schaden();
 
-        meteoritenschwert.zeichne();
-        meteoritenschwert.schaden();
+        goldschwert.zeichne();
+        goldschwert.schaden();
 
         System.out.println();
         System.out.println("Verzaubere Schwerter");
 
         Schwert flammenEisenSchwert = new Feuerzauber(eisenschwert);
-        Schwert flammenMeteoritenSchwert = new Feuerzauber(meteoritenschwert);
+        Schwert flammenMeteoritenSchwert = new Feuerzauber(goldschwert);
 
         flammenEisenSchwert.zeichne();
         flammenEisenSchwert.schaden();
@@ -31,7 +31,7 @@ public class Main {
         System.out.println("Schärfe Schwerter");
 
         Schwert scharfesEisenSchwert = new Schaerfe(eisenschwert);
-        Schwert scharfesMeteoritenSchwert = new Schaerfe(meteoritenschwert);
+        Schwert scharfesMeteoritenSchwert = new Schaerfe(goldschwert);
 
         scharfesEisenSchwert.zeichne();
         scharfesEisenSchwert.schaden();

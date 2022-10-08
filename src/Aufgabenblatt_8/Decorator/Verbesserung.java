@@ -7,4 +7,12 @@ public abstract class Verbesserung implements Schwert {
     {
         this.schwert = schwert;
     }
+
+    public void zeichne() {
+        this.schwert.zeichne();
+    }
+
+    public int schaden() {
+        return this.schwert.schaden();
+    }
 }
